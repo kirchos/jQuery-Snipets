@@ -3,18 +3,14 @@ $(function () {
         color: 'red',
         fontSize: "28px"
     })
+    $('.higlight').html('Default')
+    $('.higlight:first').html('First')
+    $('li:first-child').html('the one')
+    $('.higlight:last').html('Last')
+    $('.higlight:even').html('EVEN')
+    $('.higlight:odd').html('ODD')
 
-    $(".higlight").hover(function () {
-        $(this).css({
-            background: 'red',
-            color: 'yellow',
-        });
-    }, function () {
-        $(this).css({
-            background: 'none',
-            color: 'red'
-        });
-    });
+
 
 })
 
@@ -45,4 +41,25 @@ $(function () {
 
     var checkBoxes = $('input[type=checkbox]')
     console.log(checkBoxes.val())
+
+    hover---------
+    $('.higlight').css({
+        color: 'red',
+        fontSize: "28px"
+    })
+
+    $(".higlight").hover(function () {
+        $(this).css({
+            background: 'red',
+            color: 'yellow',
+        });
+    }, function () {
+        $(this).css({
+            background: 'none',
+            color: 'red'
+        });
+    });
+
+
+
 */

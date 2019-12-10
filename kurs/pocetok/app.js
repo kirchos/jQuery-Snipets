@@ -7,7 +7,7 @@ $(function () {
     $(".higlight").hover(function () {
         $(this).css({
             background: 'red',
-            color: 'yellow'
+            color: 'yellow',
         });
     }, function () {
         $(this).css({

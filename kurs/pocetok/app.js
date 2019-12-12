@@ -1,12 +1,44 @@
 $(function () {
 
+    $('img:eq(0)').on('click', function () {
+        $('img:eq(0)').css({
+            display: 'block',
+            position: 'absolute',
+            top: '30vh',
+            left: '30%',
+            // margin: '0px auto',
+            width: '50%',
+            height: "350px",
 
 
+        })
+        $('.slika').css({
+            height: '100vh',
+            width: '100%',
+            position: "absolute",
+            'z-index': "99999",
+            background: "rgba(0,0,0, 0.9)",
+        })
+
+        $('img:eq(1), li,p, input').css("display", 'none')
+
+    })
 
 })
 
 
 /*
+
+ $('p').click(function () {
+        $('li').first().css('color', "blue")
+        $('li').has('span').css('color', 'red')
+    })
+
+
+$('li').click(function () {
+        $(this).filter('.higlight').css('color', 'red')
+    })
+
  $('img').attr({
         src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F1227513%2Fpexels-photo-1227513.jpeg%3Fcs%3Dsrgb%26dl%3Dagriculture-blue-sky-clouds-1227513.jpg%26fm%3Djpg&f=1&nofb=1",
         alt: "Pole",

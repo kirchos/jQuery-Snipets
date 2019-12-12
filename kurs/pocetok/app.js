@@ -1,5 +1,8 @@
 $(function () {
 
+
+
+
 })
 
 
@@ -72,6 +75,39 @@ $(function () {
     $('li:gt(3)').css('color', "aqua")
     $('li:eq(3)').css('color', "red")
 
+    $('img:eq(0)').on('click', function () {
+        $('img:eq(0)').css({
+            display: 'block',
+            position: 'absolute',
+            top: '30vh',
+            left: '50vh',
+            // margin: '0px auto',
+            width: '50%',
+            height: "350px",
+
+
+        })
+        $('.slika').css({
+            height: '100vh',
+            width: '100%',
+            position: "absolute",
+            'z-index': "99999",
+            background: "rgba(0,0,0, 0.9)",
+        })
+
+        $('img:eq(1), li,p, input').css("display", 'none')
+
+    })
+
+
+     $('li').click(function () {
+        console.log($(this))
+        console.log(this)
+    })
+
+    $('p').bind('click', function () {
+        console.log('bind clicked')
+    })
 
 
 */

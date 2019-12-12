@@ -1,16 +1,4 @@
 $(function () {
-    $('.higlight').css({
-        color: 'red',
-        fontSize: "28px"
-    })
-    $('.higlight').html('Default')
-    $('.higlight:first').html('First')
-    $('li:first-child').html('the one')
-    $('.higlight:last').html('Last')
-    $('.higlight:even').html('EVEN')
-    $('.higlight:odd').html('ODD')
-
-
 
 })
 
@@ -59,6 +47,30 @@ $(function () {
             color: 'red'
         });
     });
+
+    $('.higlight').css({
+        color: 'red',
+        fontSize: "28px"
+    })
+    $('.higlight').html('Default')
+    $('.higlight:first').html('First')
+    $('li:first-child').html('the one')
+    $('.higlight:last').html('Last')
+    $('.higlight:even').html('EVEN')
+    $('.higlight:odd').html('ODD')
+
+
+    $('.higlight:eq(2)').css('color', 'blue');
+    $('.higlight:nth-child(2)').html('Spavas li mirno');
+    $('li:eq()').html('1');
+    for (i = 0; i < $('li').length; i++) {
+        $('li:eq(' + i + ')').text(i + 1)
+    }
+
+    $('li:gt(3)').css('color', "aqua")
+    $('li:lt(3)').css('color', "pink")
+    $('li:gt(3)').css('color', "aqua")
+    $('li:eq(3)').css('color', "red")
 
 
 

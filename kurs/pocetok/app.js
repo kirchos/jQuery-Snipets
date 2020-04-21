@@ -1,6 +1,37 @@
 $(function () {
 
-    $('img:eq(0)').on('click', function () {
+});
+
+/*
+
+
+$('li:gt(3)').css('color', 'blue')
+    $('li:lt(3)').css('color', 'green')
+    $('li:eq(3)').css('color', 'red')
+
+$('.highlight:eq(2)').css("color","blue");
+$('.highlight:nth-child(2)').css('color','blue');
+
+for(x=0;x<$('li').length;x++){
+    $('li:eq('+x+')').html(x+1)
+}
+
+ $('.highlight').css('color', 'red')
+    $('.highlight').html('First')
+    $('.highlight').html('Default')
+    $('.highlight:first').html('First')
+    $('li:first-child').html('The one')
+    $('.highlight:last').html('Last')
+    $('.highlight:even').html('EVEN')
+    $('.highlight:odd').html('ODD')
+    $('p:last').html('SECOND')
+
+$(function () {
+  let checkBoxes = $('input[type=checkbox]');
+  console.log(checkBoxes.val());
+});
+
+  $('img:eq(0)').on('click', function () {
         $('img:eq(0)').css({
             display: 'block',
             position: 'absolute',
@@ -23,11 +54,6 @@ $(function () {
         $('img:eq(1), li,p, input').css("display", 'none')
 
     })
-
-})
-
-
-/*
 
  $('p').click(function () {
         $('li').first().css('color', "blue")
